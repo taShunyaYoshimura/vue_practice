@@ -8,9 +8,22 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
-    <div id="app-3">
-        <span v-if="seen">Now you see me</span>
-    </div>
-    <script src="main.js"></script>
+<div id="app-4">
+    <ol>
+        <li v-for="todo in todos">
+            {{todo.text}}
+        </li>
+        <li v-for="a in todos2">
+            {{a.text}}
+        </li>
+    </ol>
+    <ol>
+        <li v-for='b in todos3'>
+            {{b.text}}
+        </li>
+    </ol>
+</div>
+
+    <script src="v-for.js"></script>
 </body>
 </html>
